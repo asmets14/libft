@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 16:52:32 by asmets            #+#    #+#             */
-/*   Updated: 2014/11/13 19:53:05 by asmets           ###   ########.fr       */
+/*   Updated: 2015/01/06 17:23:37 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,18 @@
 
 void	ft_putnbr_fd(int nb, int fd)
 {
-	unsigned int nbr;
-
+	if (nb == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", fd);
+		return;
+	}
 	if (nb < 0)
 	{
 		ft_putchar_fd('-', fd);
-		nbr = -nb;
+		nb = -nb;
 	}
-	else
-		nbr = nb;
-	if (nbr > 10)
-		ft_putnbr_fd((nbr / 10), fd);
-	ft_putchar_fd(((nbr % 10) + '0'), fd);
+	
+	if (nb /10 != 0)
+		ft_putnbr_fd((nb / 10), fd);
+	ft_putchar_fd(((nb % 10) + '0'), fd);
 }
