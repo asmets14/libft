@@ -25,7 +25,7 @@ t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	if (brand_list == NULL)
 		return (NULL);
 	beginning_list = brand_list;
-	list = list->next;
+	lst = lst->next;
 	while (lst)
 	{
 		tmp = f(lst);

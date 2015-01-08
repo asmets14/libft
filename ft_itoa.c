@@ -6,11 +6,12 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/12 15:48:35 by asmets            #+#    #+#             */
-/*   Updated: 2014/12/05 17:34:00 by asmets           ###   ########.fr       */
+/*   Updated: 2015/01/08 17:27:56 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int		counter(int b)
 {
