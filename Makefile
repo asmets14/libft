@@ -6,7 +6,7 @@
 #    By: asmets <asmets@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/07 08:53:00 by asmets            #+#    #+#              #
-#    Updated: 2014/11/16 19:06:14 by asmets           ###   ########.fr        #
+#    Updated: 2015/01/08 16:36:49 by asmets           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,11 @@ SRC =	ft_atoi.c\
 		ft_tolower.c\
 		ft_toupper.c\
 		ft_lstadd.c\
-		ft_lstiter.c
+		ft_lstiter.c\
+		ft_lstdel.c\
+		ft_lstdelone.c\
+		ft_lstmap.c\
+		ft_lstnew.c
 
 OBJ = $(SRC:.c=.o)
 
