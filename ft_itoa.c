@@ -42,12 +42,12 @@ void			max_neg(int *c, t_itoalist *var)
 
 void			test(int *c, t_itoalist *var)
 {
-	if (c < 0 && c == (-2147483648))
-		max_neg(&c, &var);
-	if (c < 0)
-		if_neg(&var, &c);
+	if (*c < 0 && *c == (-2147483648))
+		max_neg(c, var);
+	if (*c < 0)
+		if_neg(var, c);
 	else
-		var->i = counter(c);
+		var->i = counter(*c);
 	
 }
 
@@ -55,6 +55,7 @@ char			*ft_itoa(int c)
 {
 	t_itoalist var;
 
+	test(&c , &var);
 	/*if (c < 0 && c == (-2147483648))
 		max_neg(&c, &var);
 	if (c < 0)
