@@ -40,17 +40,28 @@ void			max_neg(int *c, t_itoalist *var)
 	var->j = 1;
 }
 
-char			*ft_itoa(int c)
+void			test(int *c, t_itoalist *var)
 {
-	t_itoalist var;
-
 	if (c < 0 && c == (-2147483648))
 		max_neg(&c, &var);
 	if (c < 0)
 		if_neg(&var, &c);
 	else
+		var->i = counter(c);
+	
+}
+
+char			*ft_itoa(int c)
+{
+	t_itoalist var;
+
+	/*if (c < 0 && c == (-2147483648))
+		max_neg(&c, &var);
+	if (c < 0)
+		if_neg(&var, &c);
+	else
 		var.i = counter(c);
-	var.copyi = var.i;
+	*/var.copyi = var.i;
 	var.str = (char *)malloc(sizeof(char) * var.i + 1);
 	var.i = var.i - 1;
 	if (c == 0)
