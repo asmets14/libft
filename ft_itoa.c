@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/12 15:48:35 by asmets            #+#    #+#             */
-/*   Updated: 2015/01/08 17:27:56 by asmets           ###   ########.fr       */
+/*   Updated: 2015/01/15 15:46:12 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,21 +48,14 @@ void			test(int *c, t_itoalist *var)
 		if_neg(var, c);
 	else
 		var->i = counter(*c);
-	
 }
 
 char			*ft_itoa(int c)
 {
 	t_itoalist var;
 
-	test(&c , &var);
-	/*if (c < 0 && c == (-2147483648))
-		max_neg(&c, &var);
-	if (c < 0)
-		if_neg(&var, &c);
-	else
-		var.i = counter(c);
-	*/var.copyi = var.i;
+	test(&c, &var);
+	var.copyi = var.i;
 	var.str = (char *)malloc(sizeof(char) * var.i + 1);
 	var.i = var.i - 1;
 	if (c == 0)
