@@ -6,17 +6,17 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/09 16:52:32 by asmets            #+#    #+#             */
-/*   Updated: 2015/01/06 17:15:42 by asmets           ###   ########.fr       */
+/*   Updated: 2015/01/15 15:51:01 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
 void	ft_putnbr(int nb)
 {
-	if(nb == -2147483648)
+	if (nb == -2147483648)
 	{
-		ft_putstr("-2147483648");	
+		ft_putstr("-2147483648");
 		return ;
 	}
 	if (nb < 0)
@@ -24,7 +24,7 @@ void	ft_putnbr(int nb)
 		ft_putchar('-');
 		nb = -nb;
 	}
-	if (nb /10 != 0)
+	if (nb / 10 != 0)
 		ft_putnbr(nb / 10);
 	ft_putchar((nb % 10) + '0');
 }

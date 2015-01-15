@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/08 16:28:33 by asmets            #+#    #+#             */
-/*   Updated: 2015/01/08 16:28:41 by asmets           ###   ########.fr       */
+/*   Updated: 2015/01/15 15:49:33 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ t_list *ft_lstnew(void const *content, size_t content_size)
 		new->content = ft_memalloc(content_size);
 		new->content = ft_memcpy(new->content, content, content_size);
 	}
-		new->next = NULL;
+	new->next = NULL;
 	return (new);
 }
