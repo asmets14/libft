@@ -6,7 +6,7 @@
 #    By: asmets <asmets@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/07 08:53:00 by asmets            #+#    #+#              #
-#    Updated: 2015/01/08 16:36:49 by asmets           ###   ########.fr        #
+#    Updated: 2015/01/16 15:39:18 by asmets           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,8 @@ SRC =	ft_atoi.c\
 		ft_isdigit.c\
 		ft_isprint.c\
 		ft_isspace.c\
+		ft_isprint.c\
+		ft_ismajmin.c\
 		ft_memccpy.c\
 		ft_memcmp.c\
 		ft_memmove.c\
@@ -44,6 +46,7 @@ SRC =	ft_atoi.c\
 		ft_putstr_fd.c\
 		ft_putnbr.c\
 		ft_putnbr_fd.c\
+		ft_nbrlen.c\
 		ft_strcat.c\
 		ft_strncat.c\
 		ft_strlcat.c\
@@ -80,7 +83,8 @@ SRC =	ft_atoi.c\
 		ft_lstdel.c\
 		ft_lstdelone.c\
 		ft_lstmap.c\
-		ft_lstnew.c
+		ft_lstnew.c\
+		ft_lstlast.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/16 19:09:27 by asmets            #+#    #+#             */
-/*   Updated: 2015/01/08 17:06:44 by asmets           ###   ########.fr       */
+/*   Updated: 2015/01/16 15:38:14 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,16 @@ int					ft_isalnum(int c);
 int					ft_isdigit(int c);
 int					ft_isascii(int c);
 int					ft_isprint(int c);
+int					ft_ismajmin(char *str);
+int					ft_isprint(int c);
+int					ft_nbrlen(int nb);
 int					ft_toupper(int c);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_atoi(const char *str);
+int					ft_lstlen(t_list *lst);
 char				*ft_itoa(int n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strmap(char const *s, char (*f)(char));
@@ -102,5 +106,6 @@ size_t				ft_strlcat(char *dst, const char *src, size_t size);
 size_t				ft_strlen(const char *str);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 t_list				*ft_lstnew(void const *content, size_t content_size);
+t_list				*ft_lstlast(t_list *lst);
 
 #endif
