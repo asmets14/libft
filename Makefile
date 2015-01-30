@@ -84,7 +84,9 @@ SRC =	ft_atoi.c\
 		ft_lstdelone.c\
 		ft_lstmap.c\
 		ft_lstnew.c\
-		ft_lstlast.c
+		ft_lstlast.c\
+		ft_xstrjoin.c\
+		ft_xstrjoin_free.c
 
 OBJ = $(SRC:.c=.o)
 
