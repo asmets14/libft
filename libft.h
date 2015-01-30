@@ -100,6 +100,7 @@ char				*ft_strdup(const char *s1);
 char				*ft_strcpy(char *dst, char *src);
 char				*ft_strncpy(char *dst, char *src, size_t n);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_xstrjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
