@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/16 19:09:27 by asmets            #+#    #+#             */
-/*   Updated: 2015/01/16 15:38:14 by asmets           ###   ########.fr       */
+/*   Updated: 2015/02/04 13:06:21 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,6 +97,8 @@ char				*ft_strnstr(const char *s1, const char *s2, size_t n);
 char				*ft_strcat(const char *s1, const char *s2);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
 char				*ft_strdup(const char *s1);
+char				*ft_strndup(char *s1, int len);
+char				*ft_strcdup(char *s1, char c);
 char				*ft_strcpy(char *dst, char *src);
 char				*ft_strncpy(char *dst, char *src, size_t n);
 char				*ft_strjoin(char const *s1, char const *s2);
