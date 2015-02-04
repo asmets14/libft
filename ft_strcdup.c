@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/02/04 12:49:15 by asmets            #+#    #+#             */
-/*   Updated: 2015/02/04 12:55:01 by asmets           ###   ########.fr       */
+/*   Updated: 2015/02/04 13:06:38 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "libft.h"
 
-char * ft_strcdup(const char *s1, char c)
+char *ft_strcdup(char *s1, char c)
 {
 	int i;
 
