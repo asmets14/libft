@@ -6,7 +6,7 @@
 #    By: asmets <asmets@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/07 08:53:00 by asmets            #+#    #+#              #
-#    Updated: 2015/01/16 15:39:18 by asmets           ###   ########.fr        #
+#    Updated: 2015/02/04 12:59:20 by asmets           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -56,6 +56,8 @@ SRC =	ft_atoi.c\
 		ft_strncmp.c\
 		ft_strcpy.c\
 		ft_strdup.c\
+		ft_strndup.c\
+		ft_strcdup.c\
 		ft_strlen.c\
 		ft_strdel.c\
 		ft_strncat.c\
