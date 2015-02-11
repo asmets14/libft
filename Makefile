@@ -6,7 +6,7 @@
 #    By: asmets <asmets@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/07 08:53:00 by asmets            #+#    #+#              #
-#    Updated: 2015/02/04 12:59:20 by asmets           ###   ########.fr        #
+#    Updated: 2015/02/11 15:09:52 by asmets           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,7 +89,10 @@ SRC =	ft_atoi.c\
 		ft_lstlast.c\
 		ft_xstrjoin.c\
 		ft_xstrjoin_free.c\
-		ft_xmalloc.c
+		ft_xmalloc.c\
+		get_next_line.c\
+		ft_lstaddend.c\
+		ft_strstrtab.c
 
 OBJ = $(SRC:.c=.o)
 

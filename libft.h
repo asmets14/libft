@@ -6,7 +6,7 @@
 /*   By: asmets <asmets@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/16 19:09:27 by asmets            #+#    #+#             */
-/*   Updated: 2015/02/04 13:06:21 by asmets           ###   ########.fr       */
+/*   Updated: 2015/02/11 15:10:33 by asmets           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "get_next_line.h"
 
 typedef struct		s_itoalist
 {
@@ -53,6 +54,7 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstaddend(t_list **alst, t_list *new);
 void				ft_striter(char *s, void (*f)(char *));
 void				ft_striteri(char *s, void (*f)(unsigned in, char*));
 void				ft_strdel(char **as);
@@ -85,6 +87,7 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_atoi(const char *str);
 int					ft_lstlen(t_list *lst);
+int					get_next_line(int const fd, char **line);
 char				*ft_itoa(int n);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strmap(char const *s, char (*f)(char));
@@ -94,6 +97,7 @@ char				*ft_strnew(size_t size);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strstr(const char *s1, const char *s2);
+char				*ft_strstrtab(char **tab, char *word);
 char				*ft_strnstr(const char *s1, const char *s2, size_t n);
 char				*ft_strcat(const char *s1, const char *s2);
 char				*ft_strncat(char *s1, const char *s2, size_t n);
